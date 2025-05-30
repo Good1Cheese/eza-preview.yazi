@@ -51,7 +51,7 @@ function M:setup(opts)
 end
 
 function M:entry(job)
-	local args = job.args
+	local args = job.arg
 
 	if args["inc_level"] ~= nil then
 		inc_level()
@@ -94,7 +94,7 @@ function M:peek(job)
 		end
 	end
 
-	local child = Command("eza"):args(args):stdout(Command.PIPED):stderr(Command.PIPED):spawn()
+	local child = Command("eza"):arg(args):stdout(Command.PIPED):stderr(Command.PIPED):spawn()
 
 	local limit = job.area.h
 	local lines = ""
