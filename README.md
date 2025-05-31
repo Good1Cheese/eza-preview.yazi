@@ -18,7 +18,7 @@ Tree mode:
 ### Linux/MacOS
 
 ```sh
-ya pack -a ahkohd/eza-preview
+ya pkg install Good1Cheese/eza-preview
 ```
 
 ## Usage
